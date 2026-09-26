@@ -1,0 +1,28 @@
+[project]
+name = "ride-smart-agent"
+version = "0.1.0"
+description = "Compare rides across Uber, Ola, Rapido & Namma Yatri — book the cheapest"
+requires-python = ">=3.11"
+
+dependencies = [
+    "playwright>=1.40",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "python-dotenv>=1.0",
+    "geopy>=2.4",
+]
+
+[project.optional-dependencies]
+ui = [
+    "streamlit>=1.38",
+]
+
+[project.scripts]
+ridesmart = "ride_smart.main:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["ride_smart*"]
