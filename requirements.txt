@@ -4,3 +4,7 @@ streamlit-folium>=0.22
 playwright>=1.45
 python-dotenv>=1.0
 groq>=1.0
+pydantic>=2.0
+pydantic-settings>=2.0
+geopy>=2.4
+requests>=2.31
