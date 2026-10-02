@@ -2,7 +2,7 @@
 name = "ridesmartagent"
 version = "1.0.0"
 description = "AI-powered ride-hailing price comparison"
-package-mode = false
+packages = [{include = "ride_smart"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
